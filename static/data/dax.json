@@ -1,0 +1,244 @@
+{
+    "companies": [
+        {
+            "name": "Adidas AG",
+            "rainbowFlagDuringPrideMonth" : null,
+            "rainbowFlagAlways" : null,
+            "location": "Herzogenrath, Germany"
+        },
+        {
+            "name": "Airbus",
+            "rainbowFlagDuringPrideMonth" : null,
+            "rainbowFlagAlways" : null,
+            "location": "Leiden, Netherlands"
+        },
+        {
+            "name": "Brenntag",
+            "rainbowFlagDuringPrideMonth" : null,
+            "rainbowFlagAlways" : null,
+            "location": "Essen, Germany"
+        },
+        {
+            "name": "SAP SE",
+            "rainbowFlagDuringPrideMonth" : true,
+            "rainbowFlagAlways" : false,
+            "location": "Walldorf, Germany"
+        },
+        {
+            "name": "Volkswagen AG",
+            "rainbowFlagDuringPrideMonth" : null,
+            "rainbowFlagAlways" : null,
+            "location": "Wolfsburg, Germany"
+        },
+        {
+            "name": "BMW AG",
+            "rainbowFlagDuringPrideMonth" : null,
+            "rainbowFlagAlways" : null,
+            "location": "Munich, Germany"
+        },
+        {
+            "name": "Deutsche Telekom AG",
+            "rainbowFlagDuringPrideMonth" : null,
+            "rainbowFlagAlways" : null,
+            "location": "Bonn, Germany"
+        },
+        {
+            "name": "Allianz SE",
+            "rainbowFlagDuringPrideMonth" : null,
+            "rainbowFlagAlways" : null,
+            "location": "Munich, Germany"
+        },
+        {
+            "name": "BASF SE",
+            "rainbowFlagDuringPrideMonth" : null,
+            "rainbowFlagAlways" : null,
+            "location": "Ludwigshafen, Germany"
+        },
+        {
+            "name": "Siemens AG",
+            "rainbowFlagDuringPrideMonth" : null,
+            "rainbowFlagAlways" : null,
+            "location": "Munich, Germany"
+        },
+        {
+            "name": "Daimler Truck",
+            "rainbowFlagDuringPrideMonth" : null,
+            "rainbowFlagAlways" : null,
+            "location": "Stuttgart, Germany"
+        },
+        {
+            "name": "E.ON SE",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Essen, Germany"
+        },
+        {
+            "name": "Fresenius SE & Co. KGaA",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Bad Homburg, Germany"
+        },
+        {
+            "name": "Fresenius Medical Care AG & Co. KGaA",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Bad Homburg, Germany"
+        },
+        {
+            "name": "Henkel AG & Co. KGaA",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Düsseldorf, Germany"
+        },
+        {
+            "name": "Infineon Technologies AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Neubiberg, Germany"
+        },
+        {
+            "name": "Mercedes-Benz Group",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Stuttgart, Germany"
+        },
+        {
+            "name": "Merck KGaA",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Darmstadt, Germany"
+        },
+        {
+            "name": "MTU Aero Engines AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Munich, Germany"
+        },
+        {
+            "name": "Münchener Rück",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Munich, Germany"
+        },
+        {
+            "name": "RWE AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Essen, Germany"
+        },
+        {
+            "name": "Vonovia SE",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Bochum, Germany"
+        },
+        {
+            "name": "Beiersdorf AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Hamburg, Germany"
+        },
+        {
+            "name": "Bayer AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Leverkusen, Germany"
+        },
+        {
+            "name": "Hannover Rück",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Hanover, Germany"
+        },
+        {
+            "name": "Continental AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Hanover, Germany"
+        },
+        {
+            "name": "Delivery Hero SE",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Berlin, Germany"
+        },
+        {
+            "name": "Deutsche Bank AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Frankfurt, Germany"
+        },
+        {
+            "name": "Deutsche Börse AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Eschborn, Germany"
+        },
+        {
+            "name": "Deutsche Post AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Bonn, Germany"
+        },
+        {
+            "name": "Rheinmetall AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Düsseldorf, Germany"
+        },
+        {
+            "name": "Porsche AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Stuttgart, Germany"
+        },
+        {
+            "name": "Qiagen N.V.",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Venlo, Netherlands"
+        },
+        {
+            "name": "Sartorius AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Göttingen, Germany"
+        },
+        {
+            "name": "Symrise AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Holzminden, Germany"
+        },
+        {
+            "name": "Zalando SE",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Berlin, Germany"
+        },
+        {
+            "name": "Siemens Healthineers AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Erlangen, Germany"
+        },
+        {
+            "name": "Siemens Energy",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Berlin, Germany"
+        },
+        {
+            "name": "Heidelberg Materials",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Heidelberg, Germany"
+        },
+        {
+            "name": "Commerzbank AG",
+            "rainbowFlagDuringPrideMonth": null,
+            "rainbowFlagAlways": null,
+            "location": "Frankfurt, Germany"
+        }
+    ]
+}
