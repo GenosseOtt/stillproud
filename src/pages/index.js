@@ -63,7 +63,7 @@ export default function Home() {
         </Flex>
         <PieChart style={{ height: "24vh" }} data={data} />
         <span className="headline">
-          Currently <span className="count">{inFavor.length}</span> <b>DAX</b> companies show support for <b>LGBTQIA+</b>
+          Currently <span className="count">{inFavor.length}</span> <b>DAX</b> companies raise flag for <b>LGBTQIA+</b>
         </span>
         <span className="headline center-right"><span className="count sad">{againstCount}</span> Do <b>NOT</b></span>
         <span style={{textAlign: "center", color: "black"}}>We do not know about {unknown.length}.</span>
