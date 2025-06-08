@@ -32,8 +32,8 @@ function iconForCompany(company) {
 
 const companyRows = companies.map((element) => (
   <Table.Tr key={element.name}>
-    <Table.Td width={300}>{element.name}</Table.Td>
-    <Table.Td className="center-right" width={100}>{iconForCompany(element)}</Table.Td>
+    <Table.Td style={{marginLeft: "2vw", width:"80vw"}}>{element.name}</Table.Td>
+    <Table.Td className="center-right" style={{width:"15vw"}}>{iconForCompany(element)}</Table.Td>
   </Table.Tr>
 ));
 
@@ -63,12 +63,12 @@ export default function Home() {
         </Flex>
         <PieChart style={{ height: "24vh" }} data={data} />
         <span className="headline">
-          Currently <span className="count">{inFavor.length}</span> <b>DAX</b> companies raise flag for <b>LGBTQIA+</b>
+          Vor <span className="count">{inFavor.length}</span> <b>DAX</b> Unternehmen weht weiterhin die <b>🏳️‍🌈 Flagge</b> zum <span className="rainbow">Pride Month</span>
         </span>
-        <span className="headline center-right"><span className="count sad">{againstCount}</span> Do <b>NOT</b></span>
-        <span style={{textAlign: "center", color: "black"}}>We do not know about {unknown.length}.</span>
+        <span className="headline center-right">Vor <span className="count sad">{againstCount}</span> <b>NICHT</b></span>
+        <span style={{textAlign: "center", color: "black"}}>{unknown.length} noch unbekannt.</span>
         <Button color="#FCB5B5">
-          Improve data
+          Unternehmen updated
         </Button>
 
         <Table.ScrollContainer maxHeight={!isTableExpanded ? 160 : undefined}>
@@ -79,7 +79,7 @@ export default function Home() {
         <Button 
           style={{textDecoration:"underline"}} 
           color="black" variant="transparent" 
-          size="lg" 
+          size="md" 
           onClick={() => setIsTableExpanded(!isTableExpanded)}>
             {isTableExpanded ? "Collapse table" : "Expand table"}
         </Button>
