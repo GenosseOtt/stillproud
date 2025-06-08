@@ -12,6 +12,8 @@ const inFavor = companies.filter((company) => company.rainbowFlagDuringPrideMont
 const unknown = companies.filter((company) => company.rainbowFlagDuringPrideMonth === null && company.rainbowFlagAlways === null);
 const againstCount = companies.length - inFavor.length - unknown.length;
 
+const editDataUrl = "https://github.com/GenosseOtt/stillproud/issues/new?template=unternehmen_updaten.yml";
+
 const data = [
   { name: "Yes", value: inFavor.length, color: "#FCDDF2" },
   { name: "Unknown", value: unknown.length, color: "gray" },
@@ -67,7 +69,7 @@ export default function Home() {
         </span>
         <span className="headline center-right">Vor <span className="count sad">{againstCount}</span> <b>NICHT</b></span>
         <span style={{textAlign: "center", color: "black"}}>{unknown.length} noch unbekannt.</span>
-        <Button color="#FCB5B5">
+        <Button onClick={()=> window.open(editDataUrl, "_blank")} color="#FCB5B5">
           Unternehmen updated
         </Button>
 
