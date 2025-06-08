@@ -5,7 +5,7 @@
 const config = {
   title: 'StillProud',
   tagline: 'Wir schuaen auf den DAX!',
-  // favicon: 'img/favicon.svg',
+  favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
   url: 'https://stillproud.eu',
