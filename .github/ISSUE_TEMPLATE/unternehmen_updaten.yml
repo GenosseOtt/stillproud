@@ -1,0 +1,43 @@
+name: "Unternehmen updaten"
+description: "Hilfe uns, die Daten relevant zu halten."
+title: "Unternehmen aktualisieren"
+labels: ["company/update"]
+body:
+  - type: input
+    id: company
+    attributes:
+      label: "Unternehmensname"
+      description: "Wie heißt das Unternehmen, das du aktualisieren möchtest?"
+    validations:
+      required: true
+  - type: dropdown
+    id: flag-pride-month
+    validations:
+      required: true
+    attributes:
+      label: "Pride Month."
+      description: "Weht die Regenbogenflagge während des Pride Month?"
+      options:
+        - Ja - weht während Pride Month.
+        - Nein - weht nicht während Pride Month.
+        - Unbekannt
+  - type: dropdown
+    id: flag-always
+    validations:
+      required: true
+    attributes:
+      label: "Immer sichtbar."
+      description: "Weht die Regenbogenflagge immer am Standort des Unternehmens?"
+      options:
+        - Ja - weht immer.
+        - Nein - weht nicht immer.
+        - Unbekannt
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Weitere Informationen"
+      description: "Platz für mehr"
+      placeholder: "Gibt es weitere Informationen, die du hinzufügen möchtest? Füge gerne Links zu Artikeln, Social Media Posts oder anderen Quellen hinzu." 
+    validations:
+      required: false
+ 
