@@ -4,7 +4,7 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'StillProud',
-  tagline: 'Wir schuaen auf den DAX!',
+  tagline: 'Wir schauen auf den DAX!',
   favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
