@@ -22,7 +22,12 @@
             "name": "SAP SE",
             "rainbowFlagDuringPrideMonth" : true,
             "rainbowFlagAlways" : false,
-            "location": "Walldorf, Germany"
+            "location": "Walldorf, Germany",
+            "csdAttendance": {
+                "2023": true,
+                "2024": true,
+                "2025": null
+            }
         },
         {
             "name": "Volkswagen AG",
@@ -40,13 +45,23 @@
             "name": "Deutsche Telekom AG",
             "rainbowFlagDuringPrideMonth" : null,
             "rainbowFlagAlways" : null,
-            "location": "Bonn, Germany"
+            "location": "Bonn, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": true,
+                "2025": null
+            }
         },
         {
             "name": "Allianz SE",
             "rainbowFlagDuringPrideMonth" : null,
             "rainbowFlagAlways" : null,
-            "location": "Munich, Germany"
+            "location": "Munich, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": true,
+                "2025": null
+            }
         },
         {
             "name": "BASF SE",
@@ -58,7 +73,12 @@
             "name": "Siemens AG",
             "rainbowFlagDuringPrideMonth" : null,
             "rainbowFlagAlways" : null,
-            "location": "Munich, Germany"
+            "location": "Munich, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": true,
+                "2025": null
+            }
         },
         {
             "name": "Daimler Truck",
@@ -100,7 +120,12 @@
             "name": "Mercedes-Benz Group",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Stuttgart, Germany"
+            "location": "Stuttgart, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": true,
+                "2025": null
+            }
         },
         {
             "name": "Merck KGaA",
@@ -214,7 +239,13 @@
             "name": "Zalando SE",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Berlin, Germany"
+            "location": "Berlin, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": true,
+                "2025": null
+            }
+
         },
         {
             "name": "Siemens Healthineers AG",
@@ -238,7 +269,13 @@
             "name": "Commerzbank AG",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Frankfurt, Germany"
+            "location": "Frankfurt, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": true,
+                "2025": null
+            }
+
         }
     ]
 }
