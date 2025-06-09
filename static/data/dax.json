@@ -70,12 +70,12 @@
             "location": "Ludwigshafen, Germany"
         },
         {
-            "name": "Siemens AG",
+            "name": "Siemens (inkl. Healthineers & Energy)",
             "rainbowFlagDuringPrideMonth" : null,
             "rainbowFlagAlways" : null,
             "location": "Munich, Germany",
             "csdAttendance": {
-                "2023": null,
+                "2023": true,
                 "2024": true,
                 "2025": null
             }
@@ -122,7 +122,7 @@
             "rainbowFlagAlways": null,
             "location": "Stuttgart, Germany",
             "csdAttendance": {
-                "2023": null,
+                "2023": true,
                 "2024": true,
                 "2025": null
             }
@@ -203,7 +203,12 @@
             "name": "Deutsche Post AG",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Bonn, Germany"
+            "location": "Bonn, Germany",
+            "csdAttendance": {
+                "2023": true,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Rheinmetall AG",
@@ -241,23 +246,11 @@
             "rainbowFlagAlways": null,
             "location": "Berlin, Germany",
             "csdAttendance": {
-                "2023": null,
+                "2023": true,
                 "2024": true,
                 "2025": null
             }
 
-        },
-        {
-            "name": "Siemens Healthineers AG",
-            "rainbowFlagDuringPrideMonth": null,
-            "rainbowFlagAlways": null,
-            "location": "Erlangen, Germany"
-        },
-        {
-            "name": "Siemens Energy",
-            "rainbowFlagDuringPrideMonth": null,
-            "rainbowFlagAlways": null,
-            "location": "Berlin, Germany"
         },
         {
             "name": "Heidelberg Materials",
