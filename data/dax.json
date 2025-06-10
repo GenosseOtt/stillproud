@@ -4,19 +4,34 @@
             "name": "Adidas AG",
             "rainbowFlagDuringPrideMonth" : null,
             "rainbowFlagAlways" : null,
-            "location": "Herzogenrath, Germany"
+            "location": "Herzogenrath, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Airbus",
             "rainbowFlagDuringPrideMonth" : null,
             "rainbowFlagAlways" : null,
-            "location": "Leiden, Netherlands"
+            "location": "Leiden, Netherlands",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Brenntag",
             "rainbowFlagDuringPrideMonth" : null,
             "rainbowFlagAlways" : null,
-            "location": "Essen, Germany"
+            "location": "Essen, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "SAP SE",
@@ -24,22 +39,32 @@
             "rainbowFlagAlways" : false,
             "location": "Walldorf, Germany",
             "csdAttendance": {
-                "2023": true,
-                "2024": true,
+                "2023": ["Berlin"],
+                "2024": ["Berlin"],
                 "2025": null
             }
         },
         {
-            "name": "Volkswagen AG",
-            "rainbowFlagDuringPrideMonth" : null,
+            "name": "Volkswagen AG (inkl. Cariad)" ,
+            "rainbowFlagDuringPrideMonth" : true,
             "rainbowFlagAlways" : null,
-            "location": "Wolfsburg, Germany"
+            "location": "Wolfsburg, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "BMW AG",
             "rainbowFlagDuringPrideMonth" : null,
             "rainbowFlagAlways" : null,
-            "location": "Munich, Germany"
+            "location": "Munich, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Deutsche Telekom AG",
@@ -48,7 +73,7 @@
             "location": "Bonn, Germany",
             "csdAttendance": {
                 "2023": null,
-                "2024": true,
+                "2024": ["Berlin"],
                 "2025": null
             }
         },
@@ -59,7 +84,7 @@
             "location": "Munich, Germany",
             "csdAttendance": {
                 "2023": null,
-                "2024": true,
+                "2024": ["Berlin"],
                 "2025": null
             }
         },
@@ -67,7 +92,12 @@
             "name": "BASF SE",
             "rainbowFlagDuringPrideMonth" : null,
             "rainbowFlagAlways" : null,
-            "location": "Ludwigshafen, Germany"
+            "location": "Ludwigshafen, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Siemens (inkl. Healthineers & Energy)",
@@ -75,8 +105,8 @@
             "rainbowFlagAlways" : null,
             "location": "Munich, Germany",
             "csdAttendance": {
-                "2023": true,
-                "2024": true,
+                "2023": ["Berlin"],
+                "2024": ["Berlin"],
                 "2025": null
             }
         },
@@ -84,37 +114,67 @@
             "name": "Daimler Truck",
             "rainbowFlagDuringPrideMonth" : null,
             "rainbowFlagAlways" : null,
-            "location": "Stuttgart, Germany"
+            "location": "Stuttgart, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "E.ON SE",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Essen, Germany"
+            "location": "Essen, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Fresenius SE & Co. KGaA",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Bad Homburg, Germany"
+            "location": "Bad Homburg, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Fresenius Medical Care AG & Co. KGaA",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Bad Homburg, Germany"
+            "location": "Bad Homburg, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Henkel AG & Co. KGaA",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Düsseldorf, Germany"
+            "location": "Düsseldorf, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Infineon Technologies AG",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Neubiberg, Germany"
+            "location": "Neubiberg, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Mercedes-Benz Group",
@@ -122,8 +182,8 @@
             "rainbowFlagAlways": null,
             "location": "Stuttgart, Germany",
             "csdAttendance": {
-                "2023": true,
-                "2024": true,
+                "2023": ["Berlin"],
+                "2024": ["Berlin"],
                 "2025": null
             }
         },
@@ -131,73 +191,133 @@
             "name": "Merck KGaA",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Darmstadt, Germany"
+            "location": "Darmstadt, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "MTU Aero Engines AG",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Munich, Germany"
+            "location": "Munich, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Münchener Rück",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Munich, Germany"
+            "location": "Munich, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "RWE AG",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Essen, Germany"
+            "location": "Essen, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Vonovia SE",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Bochum, Germany"
+            "location": "Bochum, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Beiersdorf AG",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Hamburg, Germany"
+            "location": "Hamburg, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Bayer AG",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Leverkusen, Germany"
+            "location": "Leverkusen, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Hannover Rück",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Hanover, Germany"
+            "location": "Hanover, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Continental AG",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Hanover, Germany"
+            "location": "Hanover, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Delivery Hero SE",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Berlin, Germany"
+            "location": "Berlin, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Deutsche Bank AG",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Frankfurt, Germany"
+            "location": "Frankfurt, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Deutsche Börse AG",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Eschborn, Germany"
+            "location": "Eschborn, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Deutsche Post AG",
@@ -205,7 +325,7 @@
             "rainbowFlagAlways": null,
             "location": "Bonn, Germany",
             "csdAttendance": {
-                "2023": true,
+                "2023": null,
                 "2024": null,
                 "2025": null
             }
@@ -214,31 +334,56 @@
             "name": "Rheinmetall AG",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Düsseldorf, Germany"
+            "location": "Düsseldorf, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Porsche AG",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Stuttgart, Germany"
+            "location": "Stuttgart, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Qiagen N.V.",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Venlo, Netherlands"
+            "location": "Venlo, Netherlands",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Sartorius AG",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Göttingen, Germany"
+            "location": "Göttingen, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Symrise AG",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Holzminden, Germany"
+            "location": "Holzminden, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Zalando SE",
@@ -246,8 +391,8 @@
             "rainbowFlagAlways": null,
             "location": "Berlin, Germany",
             "csdAttendance": {
-                "2023": true,
-                "2024": true,
+                "2023": ["Berlin"],
+                "2024": ["Berlin"],
                 "2025": null
             }
 
@@ -256,7 +401,12 @@
             "name": "Heidelberg Materials",
             "rainbowFlagDuringPrideMonth": null,
             "rainbowFlagAlways": null,
-            "location": "Heidelberg, Germany"
+            "location": "Heidelberg, Germany",
+            "csdAttendance": {
+                "2023": null,
+                "2024": null,
+                "2025": null
+            }
         },
         {
             "name": "Commerzbank AG",
@@ -265,7 +415,7 @@
             "location": "Frankfurt, Germany",
             "csdAttendance": {
                 "2023": null,
-                "2024": true,
+                "2024": ["Berlin"],
                 "2025": null
             }
 
