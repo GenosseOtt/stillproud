@@ -4,19 +4,25 @@ import { PieChart } from "@mantine/charts";
 import daxObj from "@site/static/data/dax.json";
 
 import styles from "./index.module.css";
-import { Button, Container, Flex, Stack, Table } from "@mantine/core";
+import { Button, Container, Flex, Paper, Stack, Table } from "@mantine/core";
 import { useState } from "react";
 
 const companies = daxObj.companies.sort((a, b) => a.name.localeCompare(b.name));
 const inFavor = companies.filter(
   (company) =>
     company.rainbowFlagDuringPrideMonth === true ||
-    company.rainbowFlagAlways === true
+    company.rainbowFlagAlways === true ||
+    company.csdAttendance["2023"] !== null ||
+    company.csdAttendance["2024"] !== null ||
+    company.csdAttendance["2025"] !== null
 );
 const unknown = companies.filter(
   (company) =>
     company.rainbowFlagDuringPrideMonth === null &&
-    company.rainbowFlagAlways === null
+    company.rainbowFlagAlways === null &&
+    company.csdAttendance["2023"] === null &&
+    company.csdAttendance["2024"] === null &&
+    company.csdAttendance["2025"] === null
 );
 const againstCount = companies.length - inFavor.length - unknown.length;
 
@@ -30,15 +36,25 @@ const data = [
 ];
 
 function iconForCompany(company) {
+  let icon = "";
   if (company.rainbowFlagAlways === true) {
-    return "🏳️‍🌈";
+    icon = "🏳️‍🌈";
   } else if (company.rainbowFlagDuringPrideMonth === true) {
-    return "🏳️‍🌈";
+    icon = "🏳️‍🌈";
   } else if (company.rainbowFlagDuringPrideMonth === false) {
-    return "🚫";
-  } else {
-    return "❓";
+    icon = "🚫";
   }
+
+  if (
+    company.csdAttendance["2023"] !== null ||
+    company.csdAttendance["2024"] !== null
+  ) {
+    icon += "🪧";
+  } else {
+    icon += "❓";
+  }
+
+  return icon;
 }
 
 const companyRows = companies.map((element) => (
@@ -46,7 +62,7 @@ const companyRows = companies.map((element) => (
     <Table.Td style={{ marginLeft: "2vw", width: "80vw" }}>
       {element.name}
     </Table.Td>
-    <Table.Td className="center-right" style={{ width: "15vw" }}>
+    <Table.Td className="center-right" style={{ width: "24vw" }}>
       {iconForCompany(element)}
     </Table.Td>
   </Table.Tr>
@@ -70,7 +86,7 @@ export default function Home() {
             fontSize: "5rem",
             lineHeight: "2.6rem",
             fontFamily: "Inter Black",
-            color: "#FCB5B5"
+            color: "#FCB5B5",
           }}
         >
           <p>Still</p>
@@ -95,27 +111,6 @@ export default function Home() {
         <span style={{ textAlign: "center", color: "black" }}>
           {unknown.length} noch unbekannt.
         </span>
-        <Button
-          onClick={() => window.open(editDataUrl, "_blank")}
-          color="#FCB5B5"
-        >
-          Aktualisiere Unternehmen
-        </Button>
-
-        <Table.ScrollContainer maxHeight={!isTableExpanded ? 160 : undefined}>
-          <Table withRowBorders={false}>
-            <Table.Tbody>{companyRows}</Table.Tbody>
-          </Table>
-        </Table.ScrollContainer>
-        <Button
-          style={{ textDecoration: "underline" }}
-          color="black"
-          variant="transparent"
-          size="md"
-          onClick={() => setIsTableExpanded(!isTableExpanded)}
-        >
-          {isTableExpanded ? "Verkleinere Liste " : "Zeige gesamte Liste"}
-        </Button>
 
         <Flex
           mih={50}
@@ -125,39 +120,67 @@ export default function Home() {
           direction="row"
           wrap="wrap"
         >
-          <Container size="md">
-            <span className="headline sub center-left">Worum geht's?</span>
+          <Button
+            onClick={() => window.open(editDataUrl, "_blank")}
+            color="#BE8FC3"
+          >
+            Einträge aktualisieren
+          </Button>
+          <Container className="info-box" size="md">
+            <h3 className="headline sub center-left">Warum wichtig?</h3>
+            30% LGBTQIA+ Menschen erfahren Diskriminierung im Arbeitsleben und
+            jeder 3. ist gegenüber KollegInnen nicht geoutet! Umso wichtiger ist
+            es, dass Unternehmen sich klar positionieren für ein offenes und
+            diverses Arbeitsumfeld.
+          </Container>
+          <Container className="info-box" size="md">
+            <h3 className="headline sub center-left">Engagement feiern</h3>
             <p>
-              Diese Seite zeigt eine Liste aller DAX-Unternehmen und ob sie
-              während des Pride-Monats oder dauerhaft das Regenbogen-Flagge
-              zeigen. Das Ziel ist es, Transparenz zu schaffen und Unternehmen
-              zu ermutigen, sich für die LGBTQIA+ Community einzusetzen.
+              Lasst uns alle Mitarbeitenden in den Unternehmen, die sich für
+              LGBTQIA+ täglich stark machen, feiern!
+              <br />
+              Gemeinsam mit dir möchten wir dieses Engagement zusammentragen und
+              langfristig in Erinnerung halten.
             </p>
           </Container>
-          <Container size="md">
-            <span className="headline sub center-left">Warum wichtig?</span>
-            <p>
-              Viele Unternehmen zeigen während des Pride-Monats
-              Regenbogenflaggen, aber was passiert danach? Diese Seite soll
-              Unternehmen anspornen, nicht nur temporär, sondern dauerhaft für
-              die Rechte der LGBTQIA+ Community einzustehen. TODO: honoriere
-              Menschen in Unternehmen, die dauerhaft Flagge zeigen.
-            </p>
+          <Table.ScrollContainer maxHeight={!isTableExpanded ? 240 : undefined}>
+            <Table captionSide="top" withRowBorders={false}>
+              <Table.Tbody>{companyRows}</Table.Tbody>
+              <Table.Caption>
+                🪧 Teilnahme an Kundgebungen (z.B. CSD) <br />
+                🏳️‍🌈 Hissen der Regenbogenflagge während Pride Month oder
+                alljährlich <br />❓ Unbekannt -{" "}
+                <a href="#contribute">weißt du vielleicht mehr?</a> <br />
+              </Table.Caption>
+            </Table>
+          </Table.ScrollContainer>
+
+          <Button
+            style={{ textDecoration: "underline" }}
+            color="black"
+            variant="transparent"
+            size="md"
+            onClick={() => setIsTableExpanded(!isTableExpanded)}
+          >
+            {isTableExpanded ? "Zeige kleine Liste " : "Zeige ganze Liste"}
+          </Button>
+
+          <Container id="contribute" className="info-box" size="md">
+            <h3 className="headline sub">Mach mit!</h3>
+            📣 Teil diese Seite <br />
+            👩‍💻 Verlinke Engagement in deinem Unternehmen <br />
+            🌈 Sprich drüber - auch nach Juni! <br />
           </Container>
-          <Container size="md">
-            <span className="headline sub center-left">Mach mit!</span>
-            <p>
-              {" "}
-              Diese Seite ist ein Open-Source-Projekt, das von der Community
-              gepflegt wird. Du kannst helfen, indem du fehlende Informationen
-              ergänzt oder bestehende aktualisierst.{" "}
-              <a href={editDataUrl} target="_blank" rel="noopener noreferrer">
-                Klicke hier, um ein Unternehmen zu aktualisieren.
-              </a>
-            </p>
-          </Container>{" "}
+
+          <Button
+            onClick={() => window.open(editDataUrl, "_blank")}
+            color="#BE8FC3"
+          >
+            Einträge aktualisieren
+          </Button>
         </Flex>
       </Stack>
+      <></>
     </main>
   );
 }
