@@ -4,8 +4,21 @@ import { PieChart } from "@mantine/charts";
 import daxObj from "@site/static/data/dax.json";
 
 import styles from "./index.module.css";
-import { Button, Container, Flex, Paper, Stack, Table } from "@mantine/core";
+import {
+  Button,
+  Container,
+  Flex,
+  Grid,
+  Paper,
+  Stack,
+  Table,
+} from "@mantine/core";
 import { useState } from "react";
+import {
+  IconBrandGithub,
+  IconBrandInstagram,
+  IconMail,
+} from "@tabler/icons-react";
 
 const companies = daxObj.companies.sort((a, b) => a.name.localeCompare(b.name));
 const inFavor = companies.filter(
@@ -28,6 +41,12 @@ const againstCount = companies.length - inFavor.length - unknown.length;
 
 const editDataUrl =
   "https://github.com/GenosseOtt/stillproud/issues/new?template=unternehmen_updaten.yml";
+
+const githubRepoUrl = "https://github.com/GenosseOtt/stillproud/";
+
+const instaUrl = "https://www.instagram.com/stillproud.eu/";
+
+const mailToUrl = "mailto:Johannes.Rupieper@mac.com";
 
 const data = [
   { name: "Yes", value: inFavor.length, color: "#AEE2A9" },
@@ -143,7 +162,14 @@ export default function Home() {
               langfristig in Erinnerung halten.
             </p>
           </Container>
-          <Table.ScrollContainer maxHeight={!isTableExpanded ? 240 : undefined}>
+          <Table.ScrollContainer
+            style={{
+              borderRadius: "8px",
+              padding: "8px",
+              backgroundColor: "white",
+            }}
+            maxHeight={!isTableExpanded ? 240 : undefined}
+          >
             <Table captionSide="top" withRowBorders={false}>
               <Table.Tbody>{companyRows}</Table.Tbody>
               <Table.Caption>
@@ -162,7 +188,7 @@ export default function Home() {
             size="md"
             onClick={() => setIsTableExpanded(!isTableExpanded)}
           >
-            {isTableExpanded ? "Zeige kleine Liste " : "Zeige ganze Liste"}
+            {isTableExpanded ? "Liste minimiere" : "Ganze Liste anzeigen"}
           </Button>
 
           <Container id="contribute" className="info-box" size="md">
@@ -180,7 +206,45 @@ export default function Home() {
           </Button>
         </Flex>
       </Stack>
-      <></>
+      <Grid
+        justify="center"
+        align="center"
+        className="footer"
+        textAlign="center"
+      >
+        <Grid.Col span={2}>
+          <Button
+            onClick={() => window.open(githubRepoUrl, "_blank")}
+            color="white"
+            className="footer-icon"
+            variant="transparent"
+          >
+            <IconBrandGithub />
+          </Button>
+        </Grid.Col>
+        <Grid.Col className="footer-icon" span={2}>
+        <Button
+            onClick={() => window.open(instaUrl, "_blank")}
+            color="white"
+            className="footer-icon"
+            variant="transparent"
+          >
+            <IconBrandInstagram />
+          </Button>
+          
+        </Grid.Col>
+        <Grid.Col className="footer-icon" span={2}>
+        <Button
+            onClick={() => window.open(mailToUrl, "_blank")}
+            color="white"
+            className="footer-icon"
+            variant="transparent"
+          >
+            <IconMail />
+          </Button>
+        </Grid.Col>
+        {/* <Grid.Col className="footer-text" span={5}>Impressum</Grid.Col> */}
+      </Grid>
     </main>
   );
 }

@@ -142,3 +142,18 @@ tr {
 td {
   border: none !important;
 }
+
+.footer {
+  height: 60px;
+  background-color: #916953;
+  color: white;
+}
+
+.footer-icon {
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 24px;
+  text-align: center;
+}
