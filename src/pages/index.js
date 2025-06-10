@@ -4,7 +4,7 @@ import { PieChart } from "@mantine/charts";
 import daxObj from "@site/static/data/dax.json";
 
 import styles from "./index.module.css";
-import { Button, Flex, Stack, Table } from "@mantine/core";
+import { Button, Container, Flex, Stack, Table } from "@mantine/core";
 import { useState } from "react";
 
 const companies = daxObj.companies.sort((a, b) => a.name.localeCompare(b.name));
@@ -70,26 +70,27 @@ export default function Home() {
             fontSize: "5rem",
             lineHeight: "2.6rem",
             fontFamily: "Inter Black",
+            color: "#FCB5B5"
           }}
         >
           <p>Still</p>
-          <span style={{lineHeight: "52px", marginBottom: "8px"}}>
-            <span style={{color:"#F3C28C"}}>P</span>
-            <span style={{color:"#F8DB97"}}>r</span>
-            <span style={{color:"#AEE2A9"}}>o</span>
-            <span style={{color:"#97B7D5"}}>u</span>
-            <span style={{color:"#BE8FC3"}}>d</span>
+          <span style={{ lineHeight: "52px", marginBottom: "8px" }}>
+            <span className="rainbow-orange">P</span>
+            <span className="rainbow-yellow">r</span>
+            <span className="rainbow-green">o</span>
+            <span className="rainbow-blue">u</span>
+            <span className="rainbow-violet">d</span>
           </span>
           <p>.eu</p>
         </Flex>
         <PieChart style={{ height: "24vh" }} data={data} />
         <span className="headline">
-          Vor <span className="count">{inFavor.length}</span> <b>DAX</b>{" "}
-          Unternehmen weht weiterhin die <b>🏳️‍🌈 Flagge</b> zum{" "}
-          <span className="rainbow">Pride Month</span>
+          <span className="count rainbow-green">{inFavor.length}</span>{" "}
+          <b>DAX</b> Unternehmen stehen <b>weiterhin</b> solidarisch mit der{" "}
+          <b>LGBTQIA+</b> community.
         </span>
         <span className="headline center-right">
-          Vor <span className="count sad">{againstCount}</span> <b>NICHT</b>
+          <span className="count sad">{againstCount}</span> <b>NICHT</b>
         </span>
         <span style={{ textAlign: "center", color: "black" }}>
           {unknown.length} noch unbekannt.
@@ -115,6 +116,47 @@ export default function Home() {
         >
           {isTableExpanded ? "Verkleinere Liste " : "Zeige gesamte Liste"}
         </Button>
+
+        <Flex
+          mih={50}
+          gap="md"
+          justify="center"
+          align="center"
+          direction="row"
+          wrap="wrap"
+        >
+          <Container size="md">
+            <span className="headline sub center-left">Worum geht's?</span>
+            <p>
+              Diese Seite zeigt eine Liste aller DAX-Unternehmen und ob sie
+              während des Pride-Monats oder dauerhaft das Regenbogen-Flagge
+              zeigen. Das Ziel ist es, Transparenz zu schaffen und Unternehmen
+              zu ermutigen, sich für die LGBTQIA+ Community einzusetzen.
+            </p>
+          </Container>
+          <Container size="md">
+            <span className="headline sub center-left">Warum wichtig?</span>
+            <p>
+              Viele Unternehmen zeigen während des Pride-Monats
+              Regenbogenflaggen, aber was passiert danach? Diese Seite soll
+              Unternehmen anspornen, nicht nur temporär, sondern dauerhaft für
+              die Rechte der LGBTQIA+ Community einzustehen. TODO: honoriere
+              Menschen in Unternehmen, die dauerhaft Flagge zeigen.
+            </p>
+          </Container>
+          <Container size="md">
+            <span className="headline sub center-left">Mach mit!</span>
+            <p>
+              {" "}
+              Diese Seite ist ein Open-Source-Projekt, das von der Community
+              gepflegt wird. Du kannst helfen, indem du fehlende Informationen
+              ergänzt oder bestehende aktualisierst.{" "}
+              <a href={editDataUrl} target="_blank" rel="noopener noreferrer">
+                Klicke hier, um ein Unternehmen zu aktualisieren.
+              </a>
+            </p>
+          </Container>{" "}
+        </Flex>
       </Stack>
     </main>
   );

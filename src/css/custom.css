@@ -8,7 +8,6 @@
 
 body {
   background-color: #FAF6F6;
-  color: #FCB5B5;
   padding-top: 8px;
 }
 
@@ -77,6 +76,12 @@ body {
   margin-bottom: 24px;
 }
 
+.sub {
+  font-family: "Inter Black";
+  color: #FCB5B5;
+  margin-bottom: 78px;
+}
+
 .count {
   font-family: "Inter Black";
   color: #FCB5B5;
@@ -86,8 +91,36 @@ body {
   color: #CF8E80;
 }
 
+.rainbow-red {
+  color: #F59595;
+}
+
+.rainbow-orange {
+  color: #F3C28C;
+}
+
+.rainbow-yellow {
+  color: #F8DB97;
+}
+
+.rainbow-green {
+  color: #AEE2A9;
+}
+
+.rainbow-blue {
+  color: #97B7D5;
+}
+
+.rainbow-violet {
+  color: #BE8FC3;
+}
+
 .center-right {
   text-align: right;
+}
+
+.center-left {
+  text-align: left;
 }
 
 tbody {
