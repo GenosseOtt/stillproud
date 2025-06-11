@@ -156,8 +156,8 @@
         },
         {
             "name": "Henkel AG & Co. KGaA",
-            "rainbowFlagDuringPrideMonth": null,
-            "rainbowFlagAlways": null,
+            "rainbowFlagDuringPrideMonth": false,
+            "rainbowFlagAlways": false,
             "location": "Düsseldorf, Germany",
             "csdAttendance": {
                 "2023": null,
@@ -387,8 +387,8 @@
         },
         {
             "name": "Zalando SE",
-            "rainbowFlagDuringPrideMonth": null,
-            "rainbowFlagAlways": null,
+            "rainbowFlagDuringPrideMonth": false,
+            "rainbowFlagAlways": false,
             "location": "Berlin, Germany",
             "csdAttendance": {
                 "2023": ["Berlin"],
